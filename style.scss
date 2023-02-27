@@ -1,0 +1,491 @@
+.header {
+  padding: 17px 0px 14px;
+  background-color: #3ac5c9;
+
+  @media (max-width: 991px) {
+    padding: 10px 0px 16px;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 991px) {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    .logo-header {
+      min-width: 176px;
+      max-width: 176px;
+      height: 41px;
+      object-fit: cover;
+
+      @media (max-width: 991) {
+        min-width: 135px;
+        max-width: 135px;
+        height: 32px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .menu-header {
+    display: flex;
+    align-items: center;
+    @media (max-width: 991px) {
+      margin-top: 18px;
+    }
+
+    li {
+      margin-right: 32px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+      a {
+        display: flex;
+        align-items: center;
+
+        .label {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 19px;
+          line-height: 23px;
+          /* identical to box height */
+
+          /* #313955 */
+
+          color: #313955;
+          margin-right: 8px;
+
+          @media (max-width: 991px) {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+          }
+        }
+
+        .icon {
+          min-width: 12px;
+          max-width: 12px;
+          height: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 555px;
+  background-image: url("../images/banner-pc.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: 991px) {
+    height: 377px;
+    background-image: url("../images/banner-mobile.png");
+  }
+
+  .container {
+    height: 100%;
+  }
+
+  .banner-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media (max-width: 991px) {
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+
+    .title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 76px;
+      /* identical to box height */
+
+      color: #ffffff;
+
+      @media (max-width: 991px) {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 52px;
+      }
+    }
+
+    .sub-title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 44px;
+      line-height: 52px;
+      text-transform: uppercase;
+
+      color: #ffffff;
+      padding: 10px 15px;
+      background: #f1516e;
+      border-radius: 8px;
+      margin: 12px 0px 52px;
+
+      @media (max-width: 991px) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        text-transform: uppercase;
+        padding: 9px 18px;
+        max-width: 273px;
+        margin: 18px 0px 22px;
+      }
+    }
+
+    .list-league {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      @media (max-width: 991px) {
+        justify-content: center;
+      }
+      li {
+        a {
+          .league-item-image {
+            display: block;
+            min-width: 151px;
+            max-width: 151px;
+            height: 107px;
+            object-fit: cover;
+
+            @media (max-width: 991px) {
+              min-width: 80px;
+              max-width: 80px;
+              height: 56px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-content-block {
+  background-color: #111;
+  padding: 80px 0px 84px;
+
+  @media (max-width: 991px) {
+    padding: 50px 0px 0px;
+  }
+
+  .title-block-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 18px;
+    }
+
+    .icon {
+      min-width: 32px;
+      max-width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 16px;
+
+      img {
+        min-width: 100%;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 38px;
+      /* identical to box height */
+
+      color: #ffffff !important;
+
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+      @media (max-width: 991px) {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 33px;
+      }
+    }
+  }
+
+  .hot-match-block {
+    width: 100%;
+    height: auto;
+
+    .list-match-wrapper {
+      width: 100%;
+
+      @media (max-width: 991px) {
+        max-width: 100%;
+        overflow-x: auto;
+      }
+    }
+
+    .list-match-row {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+
+      @media (max-width: 991px) {
+        margin-bottom: 12p;
+      }
+
+      .match-item {
+        min-width: 294px;
+        max-width: calc((100% - 72px) / 4);
+        margin-right: 24px;
+        height: auto;
+        background: #222222;
+        border-radius: 8px;
+        color: #fff;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        font-family: "Poppins";
+
+        @media (max-width: 991px) {
+          padding: 16px;
+          justify-content: center;
+          align-items:center;
+          min-width: 150px;
+          max-width: 150px;
+        }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+
+      .league-info {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 991px) {
+            order: 2;
+            margin: 8px 0px;
+        }
+
+        .league-image {
+          min-width: 16px;
+          max-width: 16px;
+          height: 16px;
+          object-fit: cover;
+          margin-right: 8px;
+          @media (max-width: 991px) {
+            display: none;
+          }
+        }
+
+        .league-name {
+          flex-grow: 1;
+          max-width: 100%;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          /* identical to box height */
+
+          /* #FFFFFF */
+
+          color: #ffffff;
+
+          @media (max-width: 991px) {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            max-width: 120px;
+          }
+        }
+      }
+
+      .list-club {
+        display: flex;
+        flex-direction: column;
+        margin: 14px 0px 16px;
+
+        @media (max-width: 991px) {
+            order: 1;
+            flex-direction: row;
+            width: 100%;
+            margin: 0;
+        }
+
+        .club-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 12px;
+
+          @media (max-width: 991px) {
+            flex-direction: column;
+
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+          }
+
+          .club-image {
+            min-width: 32px;
+            max-width: 32px;
+            height: 32px;
+            object-fit: cover;
+            margin-right: 8px;
+
+            @media (max-width: 991px) {
+                margin-bottom: 8px;
+            }
+          }
+
+          .club-name {
+            flex-grow: 1;
+            max-width: 100%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+
+            /* #FFFFFF */
+
+            color: #ffffff;
+
+            @media (max-width: 991px) {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 24px;
+              /* identical to box height */
+
+              text-align: center;
+
+              /* #FFFFFF */
+
+              color: #ffffff;
+              text-transform: uppercase;
+            }
+          }
+
+          .club-name-pc {
+            display: block;
+            @media (max-width: 991px) {
+              display: none;
+            }
+          }
+          .club-name-mobile {
+            display: none;
+            @media (max-width: 991px) {
+              display: block;
+            }
+          }
+        }
+      }
+
+      .match-time-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+
+        @media (max-width: 991px) {
+            order: 3;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .match-time {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          /* identical to box height */
+
+          text-align: center;
+
+          /* #FFFFFF */
+
+          color: #ffffff;
+
+          @media (max-width: 991px) {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+
+            text-align: center;
+          }
+        }
+
+        .btn-watch {
+          padding: 6px 20px;
+          background: #f1516e;
+          border-radius: 4px;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 21px;
+          /* identical to box height */
+
+          text-align: center;
+
+          /* #FFFFFF */
+
+          color: #ffffff;
+
+          @media (max-width: 991px) {
+            display: block;
+            width: 100%;
+            padding: 6px 0px;
+            text-align: center;
+            margin-top: 8px;
+            min-width: 100px;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.upcomming-match-block {
+    margin: 80px 0px 96px;
+
+    @media (max_md) {
+        margin: 50px 0px 80px;
+    }
+}

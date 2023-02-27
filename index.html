@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Intro AxScore</title>
+  </head>
+  <body>
+    <!-- START HEADER BLỌCK -->
+    <div class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="#">
+            <img src="./images/header-logo.png" alt="" class="logo-header" />
+          </a>
+          <ul class="menu-header">
+            <li>
+              <a href="#">
+                <span class="label">Home</span>
+                <span class="icon">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.4996 8.00651e-07H6.49959C6.40057 -0.000176365 6.30373 0.029052 6.22134 0.0839806C6.13895 0.138909 6.07473 0.217064 6.03681 0.308538C5.99889 0.400011 5.98899 0.500683 6.00835 0.597791C6.02772 0.6949 6.07549 0.784071 6.14559 0.854001L7.93859 2.646L5.29259 5.293C5.19708 5.38525 5.1209 5.49559 5.06849 5.6176C5.01608 5.7396 4.9885 5.87082 4.98734 6.0036C4.98619 6.13638 5.01149 6.26806 5.06177 6.39095C5.11205 6.51385 5.18631 6.6255 5.2802 6.7194C5.37409 6.81329 5.48574 6.88754 5.60864 6.93782C5.73154 6.9881 5.86321 7.01341 5.99599 7.01225C6.12877 7.0111 6.25999 6.98351 6.382 6.9311C6.504 6.87869 6.61435 6.80251 6.70659 6.707L9.35359 4.061L11.1456 5.854C11.1921 5.9004 11.2473 5.93718 11.3081 5.96223C11.3688 5.98728 11.4339 6.00012 11.4996 6C11.5651 5.99967 11.6299 5.98677 11.6906 5.962C11.782 5.92421 11.8602 5.86013 11.9152 5.77789C11.9702 5.69565 11.9996 5.59894 11.9996 5.5V0.500001C11.9996 0.367393 11.9469 0.240216 11.8531 0.146447C11.7594 0.0526792 11.6322 8.00651e-07 11.4996 8.00651e-07Z"
+                      fill="#313955"
+                    />
+                    <path
+                      d="M11 8C10.7348 8 10.4804 8.10536 10.2929 8.29289C10.1054 8.48043 10 8.73478 10 9V10H2V2H3C3.26522 2 3.51957 1.89464 3.70711 1.70711C3.89464 1.51957 4 1.26522 4 1C4 0.734784 3.89464 0.48043 3.70711 0.292893C3.51957 0.105357 3.26522 0 3 0L2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2L0 10C0 10.5304 0.210714 11.0391 0.585786 11.4142C0.960859 11.7893 1.46957 12 2 12H10C10.5304 12 11.0391 11.7893 11.4142 11.4142C11.7893 11.0391 12 10.5304 12 10V9C12 8.73478 11.8946 8.48043 11.7071 8.29289C11.5196 8.10536 11.2652 8 11 8Z"
+                      fill="#313955"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <span class="label">Highlight</span>
+                <span class="icon">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.4996 8.00651e-07H6.49959C6.40057 -0.000176365 6.30373 0.029052 6.22134 0.0839806C6.13895 0.138909 6.07473 0.217064 6.03681 0.308538C5.99889 0.400011 5.98899 0.500683 6.00835 0.597791C6.02772 0.6949 6.07549 0.784071 6.14559 0.854001L7.93859 2.646L5.29259 5.293C5.19708 5.38525 5.1209 5.49559 5.06849 5.6176C5.01608 5.7396 4.9885 5.87082 4.98734 6.0036C4.98619 6.13638 5.01149 6.26806 5.06177 6.39095C5.11205 6.51385 5.18631 6.6255 5.2802 6.7194C5.37409 6.81329 5.48574 6.88754 5.60864 6.93782C5.73154 6.9881 5.86321 7.01341 5.99599 7.01225C6.12877 7.0111 6.25999 6.98351 6.382 6.9311C6.504 6.87869 6.61435 6.80251 6.70659 6.707L9.35359 4.061L11.1456 5.854C11.1921 5.9004 11.2473 5.93718 11.3081 5.96223C11.3688 5.98728 11.4339 6.00012 11.4996 6C11.5651 5.99967 11.6299 5.98677 11.6906 5.962C11.782 5.92421 11.8602 5.86013 11.9152 5.77789C11.9702 5.69565 11.9996 5.59894 11.9996 5.5V0.500001C11.9996 0.367393 11.9469 0.240216 11.8531 0.146447C11.7594 0.0526792 11.6322 8.00651e-07 11.4996 8.00651e-07Z"
+                      fill="#313955"
+                    />
+                    <path
+                      d="M11 8C10.7348 8 10.4804 8.10536 10.2929 8.29289C10.1054 8.48043 10 8.73478 10 9V10H2V2H3C3.26522 2 3.51957 1.89464 3.70711 1.70711C3.89464 1.51957 4 1.26522 4 1C4 0.734784 3.89464 0.48043 3.70711 0.292893C3.51957 0.105357 3.26522 0 3 0L2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2L0 10C0 10.5304 0.210714 11.0391 0.585786 11.4142C0.960859 11.7893 1.46957 12 2 12H10C10.5304 12 11.0391 11.7893 11.4142 11.4142C11.7893 11.0391 12 10.5304 12 10V9C12 8.73478 11.8946 8.48043 11.7071 8.29289C11.5196 8.10536 11.2652 8 11 8Z"
+                      fill="#313955"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <span class="label">Competitions</span>
+                <span class="icon">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.4996 8.00651e-07H6.49959C6.40057 -0.000176365 6.30373 0.029052 6.22134 0.0839806C6.13895 0.138909 6.07473 0.217064 6.03681 0.308538C5.99889 0.400011 5.98899 0.500683 6.00835 0.597791C6.02772 0.6949 6.07549 0.784071 6.14559 0.854001L7.93859 2.646L5.29259 5.293C5.19708 5.38525 5.1209 5.49559 5.06849 5.6176C5.01608 5.7396 4.9885 5.87082 4.98734 6.0036C4.98619 6.13638 5.01149 6.26806 5.06177 6.39095C5.11205 6.51385 5.18631 6.6255 5.2802 6.7194C5.37409 6.81329 5.48574 6.88754 5.60864 6.93782C5.73154 6.9881 5.86321 7.01341 5.99599 7.01225C6.12877 7.0111 6.25999 6.98351 6.382 6.9311C6.504 6.87869 6.61435 6.80251 6.70659 6.707L9.35359 4.061L11.1456 5.854C11.1921 5.9004 11.2473 5.93718 11.3081 5.96223C11.3688 5.98728 11.4339 6.00012 11.4996 6C11.5651 5.99967 11.6299 5.98677 11.6906 5.962C11.782 5.92421 11.8602 5.86013 11.9152 5.77789C11.9702 5.69565 11.9996 5.59894 11.9996 5.5V0.500001C11.9996 0.367393 11.9469 0.240216 11.8531 0.146447C11.7594 0.0526792 11.6322 8.00651e-07 11.4996 8.00651e-07Z"
+                      fill="#313955"
+                    />
+                    <path
+                      d="M11 8C10.7348 8 10.4804 8.10536 10.2929 8.29289C10.1054 8.48043 10 8.73478 10 9V10H2V2H3C3.26522 2 3.51957 1.89464 3.70711 1.70711C3.89464 1.51957 4 1.26522 4 1C4 0.734784 3.89464 0.48043 3.70711 0.292893C3.51957 0.105357 3.26522 0 3 0L2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2L0 10C0 10.5304 0.210714 11.0391 0.585786 11.4142C0.960859 11.7893 1.46957 12 2 12H10C10.5304 12 11.0391 11.7893 11.4142 11.4142C11.7893 11.0391 12 10.5304 12 10V9C12 8.73478 11.8946 8.48043 11.7071 8.29289C11.5196 8.10536 11.2652 8 11 8Z"
+                      fill="#313955"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- END HEADER BLỌCK -->
+
+    <!-- START BANNER BLOCK -->
+    <div class="banner">
+      <div class="container">
+        <div class="banner-content">
+          <h1 class="title">AXScore</h1>
+          <h2 class="sub-title">Watch Live Sports 24/24</h2>
+          <ul class="list-league">
+            <li class="league-item">
+              <a href="#">
+                <img
+                  src="./images/league-1.png"
+                  alt=""
+                  class="league-item-image"
+                />
+              </a>
+            </li>
+            <li class="league-item">
+              <a href="#">
+                <img
+                  src="./images/league-2.png"
+                  alt=""
+                  class="league-item-image"
+                />
+              </a>
+            </li>
+            <li class="league-item">
+              <a href="#">
+                <img
+                  src="./images/league-3.png"
+                  alt=""
+                  class="league-item-image"
+                />
+              </a>
+            </li>
+            <li class="league-item">
+              <a href="#">
+                <img
+                  src="./images/league-4.png"
+                  alt=""
+                  class="league-item-image"
+                />
+              </a>
+            </li>
+
+            <li class="league-item">
+              <a href="#">
+                <img
+                  src="./images/league-5.png"
+                  alt=""
+                  class="league-item-image"
+                />
+              </a>
+            </li>
+            <li class="league-item">
+              <a href="#">
+                <img
+                  src="./images/league-6.png"
+                  alt=""
+                  class="league-item-image"
+                />
+              </a>
+            </li>
+            <li class="league-item">
+              <a href="#">
+                <img
+                  src="./images/league-7.png"
+                  alt=""
+                  class="league-item-image"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--END BANNER BLOCK -->
+
+    <!-- START MAIN COTENT BLOCK -->
+    <div class="main-content-block">
+      <div class="container">
+        <div class="hot-match-block">
+          <div class="title-block-wrapper">
+            <span class="icon">
+              <img src="./images/icon-titte-1.png" alt="" />
+            </span>
+            <span class="title">Hot Match</span>
+          </div>
+
+          <div class="list-match-wrapper">
+            <div class="list-match-row">
+              <div class="match-item">
+                <div class="league-info">
+                  <img src="./images/league.png" alt="" class="league-image" />
+                  <span class="league-name"> Premier League </span>
+                </div>
+
+                <div class="list-club">
+                  <div class="club-item">
+                    <img src="./images/club-1.png" alt="" class="club-image" />
+                    <span class="club-name club-name-pc"> Liverpool </span>
+                    <span class="club-name club-name-mobile">ARS</span>
+                  </div>
+                  <div class="club-item">
+                    <img src="./images/club-2.png" alt="" class="club-image" />
+                    <span class="club-name club-name-pc">
+                      Manchester United
+                    </span>
+                    <span class="club-name club-name-mobile">CHE</span>
+                  </div>
+                </div>
+
+                <div class="match-time-wrapper">
+                  <span class="match-time">Jun 8, 20:45</span>
+                  <button class="btn-watch">watch</button>
+                </div>
+              </div>
+              <div class="match-item">
+                <div class="league-info">
+                  <img src="./images/league.png" alt="" class="league-image" />
+                  <span class="league-name"> Premier League </span>
+                </div>
+
+                <div class="list-club">
+                  <div class="club-item">
+                    <img src="./images/club-1.png" alt="" class="club-image" />
+                    <span class="club-name club-name-pc"> Liverpool </span>
+                    <span class="club-name club-name-mobile">ARS</span>
+                  </div>
+                  <div class="club-item">
+                    <img src="./images/club-2.png" alt="" class="club-image" />
+                    <span class="club-name club-name-pc">
+                      Manchester United
+                    </span>
+                    <span class="club-name club-name-mobile">CHE</span>
+                  </div>
+                </div>
+
+                <div class="match-time-wrapper">
+                  <span class="match-time">Jun 8, 20:45</span>
+                  <button class="btn-watch">watch</button>
+                </div>
+              </div>
+              <div class="match-item">
+                <div class="league-info">
+                  <img src="./images/league.png" alt="" class="league-image" />
+                  <span class="league-name"> Premier League </span>
+                </div>
+
+                <div class="list-club">
+                  <div class="club-item">
+                    <img src="./images/club-1.png" alt="" class="club-image" />
+                    <span class="club-name club-name-pc"> Liverpool </span>
+                    <span class="club-name club-name-mobile">ARS</span>
+                  </div>
+                  <div class="club-item">
+                    <img src="./images/club-2.png" alt="" class="club-image" />
+                    <span class="club-name club-name-pc">
+                      Manchester United
+                    </span>
+                    <span class="club-name club-name-mobile">CHE</span>
+                  </div>
+                </div>
+
+                <div class="match-time-wrapper">
+                  <span class="match-time">Jun 8, 20:45</span>
+                  <button class="btn-watch">watch</button>
+                </div>
+              </div>
+              <div class="match-item">
+                <div class="league-info">
+                  <img src="./images/league.png" alt="" class="league-image" />
+                  <span class="league-name"> Premier League Premier League remier League</span>
+                </div>
+
+                <div class="list-club">
+                  <div class="club-item">
+                    <img src="./images/club-1.png" alt="" class="club-image" />
+                    <span class="club-name club-name-pc"> Liverpool Liverpool Liverpool Liverpool </span>
+                    <span class="club-name club-name-mobile">ARS</span>
+                  </div>
+                  <div class="club-item">
+                    <img src="./images/club-2.png" alt="" class="club-image" />
+                    <span class="club-name club-name-pc">
+                      Manchester United   Manchester United
+                    </span>
+                    <span class="club-name club-name-mobile">CHE</span>
+                  </div>
+                </div>
+
+                <div class="match-time-wrapper">
+                  <span class="match-time">Jun 8, 20:45</span>
+                  <button class="btn-watch">watch</button>
+                </div>
+              </div>
+            </div>
+            <div class="list-match-row">
+                <div class="match-item">
+                  <div class="league-info">
+                    <img src="./images/league.png" alt="" class="league-image" />
+                    <span class="league-name"> Premier League </span>
+                  </div>
+  
+                  <div class="list-club">
+                    <div class="club-item">
+                      <img src="./images/club-1.png" alt="" class="club-image" />
+                      <span class="club-name club-name-pc"> Liverpool </span>
+                      <span class="club-name club-name-mobile">ARS</span>
+                    </div>
+                    <div class="club-item">
+                      <img src="./images/club-2.png" alt="" class="club-image" />
+                      <span class="club-name club-name-pc">
+                        Manchester United
+                      </span>
+                      <span class="club-name club-name-mobile">CHE</span>
+                    </div>
+                  </div>
+  
+                  <div class="match-time-wrapper">
+                    <span class="match-time">Jun 8, 20:45</span>
+                    <button class="btn-watch">watch</button>
+                  </div>
+                </div>
+                <div class="match-item">
+                  <div class="league-info">
+                    <img src="./images/league.png" alt="" class="league-image" />
+                    <span class="league-name"> Premier League </span>
+                  </div>
+  
+                  <div class="list-club">
+                    <div class="club-item">
+                      <img src="./images/club-1.png" alt="" class="club-image" />
+                      <span class="club-name club-name-pc"> Liverpool </span>
+                      <span class="club-name club-name-mobile">ARS</span>
+                    </div>
+                    <div class="club-item">
+                      <img src="./images/club-2.png" alt="" class="club-image" />
+                      <span class="club-name club-name-pc">
+                        Manchester United
+                      </span>
+                      <span class="club-name club-name-mobile">CHE</span>
+                    </div>
+                  </div>
+  
+                  <div class="match-time-wrapper">
+                    <span class="match-time">Jun 8, 20:45</span>
+                    <button class="btn-watch">watch</button>
+                  </div>
+                </div>
+                <div class="match-item">
+                  <div class="league-info">
+                    <img src="./images/league.png" alt="" class="league-image" />
+                    <span class="league-name"> Premier League </span>
+                  </div>
+  
+                  <div class="list-club">
+                    <div class="club-item">
+                      <img src="./images/club-1.png" alt="" class="club-image" />
+                      <span class="club-name club-name-pc"> Liverpool </span>
+                      <span class="club-name club-name-mobile">ARS</span>
+                    </div>
+                    <div class="club-item">
+                      <img src="./images/club-2.png" alt="" class="club-image" />
+                      <span class="club-name club-name-pc">
+                        Manchester United
+                      </span>
+                      <span class="club-name club-name-mobile">CHE</span>
+                    </div>
+                  </div>
+  
+                  <div class="match-time-wrapper">
+                    <span class="match-time">Jun 8, 20:45</span>
+                    <button class="btn-watch">watch</button>
+                  </div>
+                </div>
+                <div class="match-item">
+                  <div class="league-info">
+                    <img src="./images/league.png" alt="" class="league-image" />
+                    <span class="league-name"> Premier League Premier League remier League</span>
+                  </div>
+  
+                  <div class="list-club">
+                    <div class="club-item">
+                      <img src="./images/club-1.png" alt="" class="club-image" />
+                      <span class="club-name club-name-pc"> Liverpool Liverpool Liverpool Liverpool </span>
+                      <span class="club-name club-name-mobile">ARS</span>
+                    </div>
+                    <div class="club-item">
+                      <img src="./images/club-2.png" alt="" class="club-image" />
+                      <span class="club-name club-name-pc">
+                        Manchester United   Manchester United
+                      </span>
+                      <span class="club-name club-name-mobile">CHE</span>
+                    </div>
+                  </div>
+  
+                  <div class="match-time-wrapper">
+                    <span class="match-time">Jun 8, 20:45</span>
+                    <button class="btn-watch">watch</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="upcomming-match-block">
+            <div class="title-block-wrapper">
+                <span class="icon">
+                  <img src="./images/icon-title-2.png" alt="" />
+                </span>
+                <span class="title">Upcoming matches</span>
+              </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MAIN COTENT BLOCK -->
+  </body>
+</html>
