@@ -161,6 +161,18 @@
     justify-content: center;
   }
 }
+.banner .banner-content .list-league li {
+  margin-right: 12px;
+}
+@media (max-width: 991px) {
+  .banner .banner-content .list-league li {
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+}
+.banner .banner-content .list-league li:last-of-type {
+  margin-right: 0;
+}
 .banner .banner-content .list-league li a .league-item-image {
   display: block;
   min-width: 151px;

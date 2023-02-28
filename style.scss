@@ -162,6 +162,15 @@
         justify-content: center;
       }
       li {
+        margin-right: 12px;
+
+        @media (max-width: 991px) {
+          margin-right: 8px;
+          margin-bottom: 8px;
+        }
+        &:last-of-type {
+          margin-right: 0;
+        }
         a {
           .league-item-image {
             display: block;
