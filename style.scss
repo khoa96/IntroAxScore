@@ -274,7 +274,7 @@
         @media (max-width: 991px) {
           padding: 16px;
           justify-content: center;
-          align-items:center;
+          align-items: center;
           min-width: 150px;
           max-width: 150px;
         }
@@ -289,8 +289,8 @@
         align-items: center;
 
         @media (max-width: 991px) {
-            order: 2;
-            margin: 8px 0px;
+          order: 2;
+          margin: 8px 0px;
         }
 
         .league-image {
@@ -336,10 +336,10 @@
         margin: 14px 0px 16px;
 
         @media (max-width: 991px) {
-            order: 1;
-            flex-direction: row;
-            width: 100%;
-            margin: 0;
+          order: 1;
+          flex-direction: row;
+          width: 100%;
+          margin: 0;
         }
 
         .club-item {
@@ -364,7 +364,7 @@
             margin-right: 8px;
 
             @media (max-width: 991px) {
-                margin-bottom: 8px;
+              margin-bottom: 8px;
             }
           }
 
@@ -419,12 +419,11 @@
         display: flex;
         justify-content: space-between;
 
-
         @media (max-width: 991px) {
-            order: 3;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+          order: 3;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
 
         .match-time {
@@ -483,9 +482,140 @@
 }
 
 .upcomming-match-block {
-    margin: 80px 0px 96px;
+  margin: 80px 0px 96px;
 
-    @media (max_md) {
-        margin: 50px 0px 80px;
+  @media (max_md) {
+    margin: 50px 0px 80px;
+  }
+}
+
+.about-page-block {
+  background: #3ac5c9;
+  border-radius: 8px;
+  width: 100%;
+  padding: 64px;
+  font-family: "Poppins";
+
+  @media (max-width: 991px) {
+    padding: 30px 16px 42px;
+    border-radius: 0;
+  }
+
+  .about-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+
+    color: #111111;
+    margin-bottom: 12px;
+
+    @media (max-width: 991px) {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 16px;
     }
+  }
+
+  .about-item {
+    width: 100%;
+
+    .sub-title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height */
+      margin-bottom: 12px;
+      color: #111111;
+
+      @media (max-width: 991px) {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .line-block {
+    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #111111;
+
+    @media (max-width: 991px) {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 12px;
+    }
+  }
+
+  .line-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #111111;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mb-24 {
+    margin-bottom: 24px;
+    @media (max-width: 991px) {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.table-match-wrapper {
+  .table-item {
+    width: 100%;
+    height: auto;
+
+    .table-header {
+      padding: 8px 16px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+      /* identical to box height */
+
+      color: #ffffff;
+      background: #313955;
+
+      @media (max-width: 991px) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        /* identical to box height */
+
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.main-content-block {
+  .container {
+    @media (max-width: 991px) {
+      padding: 0 !important;
+    }
+  }
+}
+.hot-match-block,
+.upcomming-match-block {
+  @media (max-width: 991px) {
+    padding: 0px 12px;
+  }
 }
