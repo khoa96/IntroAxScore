@@ -41,10 +41,10 @@ button:hover {
 
 .container {
   margin: 0 auto;
-  min-width: 1248px;
-  max-width: 1248px;
+  min-width: 1200px;
+  max-width: 1200px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   .container {
     min-width: 100%;
     max-width: 100%;
